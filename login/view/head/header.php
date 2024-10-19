@@ -187,7 +187,7 @@
             </div>
         </section>
         
-         <section id="contacto" class="content about py-5 bg-white d-flex align-items-center justify-content-center" style="background-image: url(/login/asset/img/fondo.avif); background-size: cover; background-position: center; color: white; height: 110vh; max-width: 100%; margin: auto;">
+        <section id="contacto" class="content about py-5 bg-white d-flex align-items-center justify-content-center" style="background-image: url(/login/asset/img/fondo.avif); background-size: cover; background-position: center; color: white; height: 110vh; max-width: 100%; margin: auto;">
             <div class="container">
                 <article class="text-center">
                     <h2 class="title mb-4">Contacto</h2>
@@ -199,32 +199,34 @@
                             </div>
                         </div>
                         <div class="col-md-6 mb-4">
-                            <form action="enviar.php" method="post">
+                        <form class="contact-form p-4 border rounded bg-secundary shadow">
                                 <div class="form-group mb-2">
                                     <label for="nombre" class="form-label">Nombre:</label>
-                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Juan Pérez" required>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Juan Pérez" required aria-label="Nombre">
                                 </div>
                                 <div class="form-group mb-2">
                                     <label for="email" class="form-label">Email:</label>
-                                    <input type="email" class="form-control" id="email" name="correo" placeholder="juan.perez@example.com" required>
+                                    <input type="email" class="form-control" id="email" name="correo" placeholder="juan.perez@example.com" required aria-label="Email">
                                 </div>
                                 <div class="form-group mb-2">
                                     <label for="mensaje" class="form-label">Mensaje:</label>
-                                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required aria-label="Mensaje"></textarea>
                                 </div>
                                 <div class="mb-2 form-check">
-                                    <input type="checkbox" class="form-check-input" id="acepto" required>
-                                    <label class="form-check-label" for="acepto">Acepto la politica de privacidad</label>
+                                    <input type="checkbox" class="form-check-input" id="acepto" required aria-label="Acepto la política de privacidad">
+                                    <label class="form-check-label" for="acepto">Acepto la política de privacidad</label>
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+                            </form>
                                 <div class="text-center mt-3">
                                     <a href="/login/index.php" class="btn btn-primary">Regresar a la Página Principal</a>
-                            </form>
+                                </div>
                         </div>
                     </div>
                 </article>
             </div>
         </section>
+
 
 
         <footer class="footer fw-bold">
