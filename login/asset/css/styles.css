@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 30px;
+    background-image: url('/login/asset/img/camiones02.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 360px; /* Ajusta la altura según tus necesidades */
+    color: white; /* Asegúrate de que el texto sea legible sobre la imagen */
+}
+.header .content {
+    padding: 20px;
+}
+
+.navbar-toggler {
+    position: relative;
+}
+
+.navbar-toggler::after {
+    content: '\25BC'; /* Código Unicode para una flecha hacia abajo */
+    position: absolute;
+    right: 10px; /* Ajusta la posición según sea necesario */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em; /* Ajusta el tamaño de la flecha */
+}
+
+
